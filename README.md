@@ -5,6 +5,8 @@ Compatible with IE7+, Chrome, FF
 
 ## Getting started
 
+(You can download example.html to see some examples)
+
 Include jQuery, jQuery EasyBubble Plugin and stylesheet:
 
 ```
@@ -13,16 +15,23 @@ Include jQuery, jQuery EasyBubble Plugin and stylesheet:
 	<script type="text/javascript" src="jquery-easybubble.min.js"></script>
 ```
 
-Now, just bind the bubbles to any jquery object: 
+Assuming you have a html link such as:
+
 ```
-	$('.box2').easyBubble({
+	<a href="#" class="box">Show me a simple bubble</a>
+```
+
+Now, just bind the bubbles to any jquery object: 
+
+```
+	$('.box').easyBubble({
 		innerHtml: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 	});
 ```
 or to set your bubble at the left side: 
 
 ```
-	$('.box2').easyBubble({
+	$('.box').easyBubble({
 		innerHtml: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 		align: 'right'
 	});
@@ -33,7 +42,7 @@ You can also override some optional values like:
 * width: Width of the bubble content
 * height: height of the bubble content
 * top: relative top, you can use negative values
-* left: relative left, you can use negative values* 
+* left: relative left, you can use negative values
 
 ## IE7 and IE8 support
 
