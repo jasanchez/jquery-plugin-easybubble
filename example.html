@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>EasyBubble Example</title>
+	<link rel="Stylesheet" type="text/css" href="jquery-easybubble.css" />
+	<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="jquery-easybubble.min.js"></script>
+</head>
+
+
+<style>
+
+body {
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size: 0.9em;
+	}
+
+ul#example{
+	list-style: none;	
+	padding: 0;
+	margin: 0 auto;
+	width:300px;	
+
+}
+
+ul#example li {
+	float:left;
+	margin: 10px;
+	clear:both;
+	
+}
+
+ul#example li a {
+	float:left;
+	
+}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+    $('.box1').easyBubble({
+        innerHtml: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mauris sem. Aenean sed elit a dui tempus laoreet fringilla ac lacus. Nunc ligula augue, eleifend ut sollicitudin at, auctor quis magna',
+		align: 'right'
+
+    });
+	
+	
+    $('.box2').easyBubble({
+        innerHtml: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mauris sem. Aenean sed elit a dui tempus laoreet fringilla ac lacus. Nunc ligula augue, eleifend ut sollicitudin at, auctor quis magna'
+    });
+	
+	
+    $('.box3').easyBubble({
+        innerHtml: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at lacus nec lectus rhoncus suscipit. Integer aliquam vulputate ante, ut bibendum metus porttitor ac. Pellentesque facilisis, purus sed venenatis blandit, neque turpis mollis metus, eget ornare odio tellus ut risus. Curabitur tempor interdum risus, sed rutrum risus porttitor ac. Suspendisse vel erat eget odio laoreet auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque sagittis, tortor non pretium vulputate, nisi neque semper magna, in feugiat odio nisi eget velit. Donec aliquet egestas orci nec lobortis. Sed vitae mollis mi. Etiam a tellus at felis lobortis luctus.',
+		width: 500
+    });
+	
+	$('.box4').easyBubble({
+        innerHtml: $('#box4content').html(),
+		width: 400
+    });
+	$('#box4content').hide()
+
+});
+
+</script>
+
+
+<body>
+<ul id="example">
+	<li><a href="#" class="box1">Show me a simple bubble</a></li>
+	<li><a href="#" class="box2">Show me a simple right align bubble</a></li>
+	<li><a href="#" class="box3">Show me a big bubble</a></li>
+	<li><a href="#" class="box4">Show me a big width html</a>
+		<div id="box4content">
+			<p><b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit. Quisque at lacus nec lectus rhoncus suscipit. Integer aliquam vulputate ante, ut bibendum metus porttitor ac. Pellentesque facilisis, purus sed venenatis blandit, neque turpis mollis metus, eget ornare odio tellus ut risus. </p>
+			<p>Curabitur tempor interdum risus, sed rutrum risus porttitor ac. <b>Suspendisse vel erat eget odio laoreet auctor.</b> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque sagittis, tortor non pretium vulputate, nisi neque semper magna, in feugiat odio nisi eget velit. </p>
+			<p>Donec aliquet egestas orci nec lobortis. Sed vitae mollis mi. Etiam a tellus at felis lobortis luctus.</p>
+		</div>
+	</li>	
+</ul>
+</body>
+</html>
