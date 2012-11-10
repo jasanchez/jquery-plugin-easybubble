@@ -1,4 +1,4 @@
-# jquery EasyBubble Plugin 
+# jQuery EasyBubble Plugin 
 ###Simple crossbrowser CSS bubble tooltip
 
 Compatible with IE7+, Chrome, FF
