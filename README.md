@@ -4,7 +4,7 @@
 Supports IE7+, Chrome, FF
 
 ## Getting started
-***
+
 Include jQuery, jQuery EasyBubble Plugin and stylesheet:
 
 ``   <link rel="Stylesheet" type="text/css" href="jquery-easybubble.css" />
@@ -32,5 +32,5 @@ You can also override some optional values like:
 * left: relative left, you can use negative values* 
 
 ## License
-***
+
 Copyright (c) 2012 Jose Antonio Sanchez Licensed under the GNU General Public License v3.
