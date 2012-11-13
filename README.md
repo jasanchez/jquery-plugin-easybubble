@@ -28,7 +28,7 @@ Now, just bind the bubbles to any jquery object:
 		innerHtml: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 	});
 ```
-or to set your bubble at the left side: 
+or set your bubble at the left side: 
 
 ```
 	$('.box').easyBubble({
