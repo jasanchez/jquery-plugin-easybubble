@@ -5,7 +5,7 @@ Compatible with IE7+, Chrome, FF
 
 ## Getting started
 
-(You can download example.html to see some examples)
+(download example.html to see some examples)
 
 Include jQuery, jQuery EasyBubble Plugin and stylesheet:
 
